@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="おふとん ギルド用レイドテンプレ">
+<title>おふとん｜レイドテンプレ</title>
+<style>
+:root{
+  --bg:#f5f6f8; --card:#fff; --text:#252832; --muted:#707582;
+  --line:#e5e7eb; --accent:#5b6475; --accent2:#8b5cf6;
+  --danger:#c83b4a; --warn:#b7791f; --shadow:0 10px 30px rgba(31,35,41,.07);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.75}
+a{color:inherit}
+.header{background:linear-gradient(135deg,#242936,#424a59);color:#fff;padding:38px 20px 34px}
+.header-inner{max-width:1080px;margin:auto}
+.badge{display:inline-block;padding:4px 10px;border:1px solid rgba(255,255,255,.25);border-radius:999px;font-size:12px;letter-spacing:.08em}
+h1{margin:10px 0 4px;font-size:clamp(28px,5vw,44px);letter-spacing:.02em}
+.subtitle{margin:0;color:#d8dce4}
+.nav-wrap{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{max-width:1080px;margin:auto;display:flex;gap:8px;padding:10px 16px;overflow:auto}
+.nav button{white-space:nowrap;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 15px;cursor:pointer;font-weight:700;color:#555}
+.nav button.active{background:#2f3542;color:#fff;border-color:#2f3542}
+main{max-width:1080px;margin:30px auto 70px;padding:0 16px}
+.page{display:none}.page.active{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;margin:16px 0;box-shadow:var(--shadow)}
+.hero-card{padding:28px}
+h2{font-size:26px;margin:0 0 18px}
+h3{font-size:19px;margin:28px 0 10px;display:flex;align-items:center;gap:9px}
+h3:before{content:"";width:5px;height:1.15em;border-radius:4px;background:var(--accent2)}
+ul{padding-left:1.3em;margin:8px 0}
+li{margin:4px 0}
+.notice{border-left:4px solid var(--warn);background:#fff9ed;padding:13px 16px;border-radius:0 10px 10px 0;margin:14px 0}
+.important{border-left:4px solid var(--danger);background:#fff3f4;padding:13px 16px;border-radius:0 10px 10px 0;margin:14px 0}
+.info{border-left:4px solid #64748b;background:#f5f7fa;padding:13px 16px;border-radius:0 10px 10px 0;margin:14px 0}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.pill{font-size:13px;background:#f0f2f5;border-radius:999px;padding:4px 10px}
+.timing{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:12px 0}
+.timing div{border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center;background:#fafafa}
+.timing strong{display:block;font-size:20px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+figure{margin:18px 0}
+figure{max-width:620px;margin:22px auto}
+figure img{width:100%;max-width:620px;display:block;margin:auto;border:1px solid var(--line);border-radius:14px;background:#fff;cursor:zoom-in}
+figure img:hover{opacity:.96}
+figcaption{font-size:12px;color:var(--muted);margin-top:6px}
+.future{display:flex;align-items:center;gap:14px;padding:22px;border:1px dashed #b9bec8;border-radius:16px;background:#fafbfc}
+.future-icon{font-size:30px}
+.small{font-size:13px;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:12px;padding:30px 16px 50px}
+.search{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:15px;margin-bottom:16px}
+.noresult{display:none;color:var(--muted);text-align:center;padding:20px}
+@media(max-width:720px){
+  main{margin-top:18px}
+  .card{padding:18px;border-radius:15px}
+  .grid-2{grid-template-columns:1fr}
+  .timing{grid-template-columns:1fr 1fr}
+  h2{font-size:23px}
+}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <span class="badge">GUILD RAID TEMPLATE</span>
+    <h1>おふとん</h1>
+    <p class="subtitle">悖逆の機骸｜レイド攻略・指揮用テンプレ</p>
+  </div>
+</header>
+
+<div class="nav-wrap">
+  <nav class="nav">
+    <button class="active" data-page="top">概要</button>
+    <button data-page="start">悖逆の機骸-始</button>
+    <button data-page="continue">悖逆の機骸-継</button>
+    <button data-page="end">悖逆の機骸-終</button>
+  </nav>
+</div>
+
+<main>
+<section id="top" class="page active">
+  <div class="card hero-card">
+    <h2>悖逆の機骸</h2>
+    <p>ギルド「おふとん」用のレイドテンプレです。攻略中のメンバーが<strong>必要な情報をすぐ確認できること</strong>を重視した構成にしています。</p>
+    <div class="pills">
+      <span class="pill">時計回り移動</span>
+      <span class="pill">PIN配置</span>
+      <span class="pill">ギミック処理</span>
+      <span class="pill">ハード追加</span>
+    </div>
+  </div>
+  <div class="card">
+    <h3>テンプレ一覧</h3>
+    <div class="grid-2">
+      <div class="info"><strong>悖逆の機骸-始</strong><br><span class="small">エリア移動・頭割り・線AOE・距離減衰</span></div>
+      <div class="info"><strong>悖逆の機骸-継</strong><br><span class="small">床破壊・広範囲AOE・ゴーレム処理</span></div>
+    </div>
+    <div class="future" style="margin-top:16px">
+      <div class="future-icon">＋</div>
+      <div><strong>悖逆の機骸-終</strong><br><span class="small">今後追加予定</span></div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>使い方</h3>
+    <p class="small">上のメニューからレイドを選択してください。スマートフォンでも確認しやすいよう、項目をカード形式で整理しています。</p>
+  </div>
+</section>
+
+<section id="start" class="page">
+  <div class="card">
+    <h2>悖逆の機骸-始</h2>
+    <div class="pills"><span class="pill">エリア移動</span><span class="pill">頭割り</span><span class="pill">線AOE</span><span class="pill">ハード追加</span><span class="pill">距離減衰</span></div>
+
+    <h3>エリア移動</h3>
+    <ul>
+      <li>エリアは<strong>時計回り</strong>に移動</li>
+      <li><strong>Tさんは奇数PINの場所へボスを誘導</strong></li>
+      <li><strong>遠距離Dは偶数PINに集合</strong></li>
+      <li><strong>近接DとHはできるだけボスへ寄る</strong></li>
+    </ul>
+    <div class="important">これにより、<strong>線ギミックの位置を9割固定</strong>できます。</div>
+
+    <figure>
+      <img src="assets/start_map.png" alt="悖逆の機骸-始 PIN配置図">
+      <figcaption>PIN配置図</figcaption>
+    </figure>
+
+    <h3>エリア移動タイミング</h3>
+    <div class="timing">
+      <div><strong>100</strong>4PT が隣へ移動</div>
+      <div><strong>105</strong>3PT が隣へ移動</div>
+      <div><strong>110</strong>2PT が隣へ移動</div>
+      <div><strong>115</strong>1PT が隣へ移動</div>
+    </div>
+    <div class="notice">壁を越えると<strong>全体ダメージ＋デバフ付与雑魚出現</strong>。一斉に渡らず、<strong>分かれて移動</strong>します。</div>
+    <ul><li>移動後に沸く雑魚は<strong>集敵 → 処理</strong></li></ul>
+
+    <h3>頭割り</h3>
+    <ul>
+      <li><strong>回復阻害あり</strong></li>
+      <li>重ねずに処理</li>
+      <li><strong>3～4人ずつ</strong>に分かれて受ける</li>
+    </ul>
+
+    <h3>線AOE</h3>
+    <ul>
+      <li>線が付いた<strong>3人</strong>は、<strong>紫オーブの上にAOEが重なるように立つ</strong></li>
+      <li>線AOEが来たら<strong>オーブから離れる</strong></li>
+    </ul>
+
+    <figure>
+      <img src="assets/start_line.png" alt="線AOEの配置イメージ">
+      <figcaption>線AOE・紫オーブ配置イメージ</figcaption>
+    </figure>
+
+    <h3>ハード以降：オーブ4つ</h3>
+    <p>台形に配置される球を<strong>三角形のAOEに収められるように注意</strong>。</p>
+
+    <h3>本体＋分身｜距離減衰</h3>
+    <div class="grid-2">
+      <div class="important"><strong>1回目</strong><br>ボスから離れる</div>
+      <div class="important"><strong>2回目</strong><br>分身から離れる</div>
+    </div>
+    <p class="small">時間差で2回来ます。</p>
+  </div>
+</section>
+
+<section id="continue" class="page">
+  <div class="card">
+    <h2>悖逆の機骸-継</h2>
+    <div class="pills"><span class="pill">床破壊</span><span class="pill">ハード追加</span><span class="pill">広範囲AOE</span><span class="pill">ゴーレム</span></div>
+
+    <figure>
+      <img src="assets/continue_map.png" alt="悖逆の機骸-継 3×3配置図">
+      <figcaption>3×3配置図</figcaption>
+    </figure>
+
+    <h3>床破壊攻撃</h3>
+    <ul>
+      <li><strong>1 → 2 → 3 PINの順番</strong>でまとめて処理</li>
+      <li>基本は対象者が指定された床を使って処理</li>
+      <li>【非推奨】処理に余裕がある人は、<strong>デカAOEの処理タイミングでジャンプして一度外へ出て戻る</strong>ことで、余分な床を壊さずに処理可能</li>
+    </ul>
+    <div class="notice"><strong>ハード以上</strong><br>2番目の対象者は猶予時間が短い。間に合わない場合は<strong>中央3PINの床を使ってOK</strong>。</div>
+
+    <h3>ハード追加ギミック：広範囲AOE</h3>
+    <ul>
+      <li><strong>2名指定</strong></li>
+      <li>それぞれ角で処理</li>
+    </ul>
+
+    <h3>ゴーレム処理</h3>
+    <ul>
+      <li><strong>T1：6 PINで待機</strong></li>
+      <li><strong>T2：2 PIN側で待機</strong></li>
+      <li><strong>DH：6 PIN集合</strong></li>
+    </ul>
+    <div class="important"><strong>6PINゴーレムを先落とし</strong>、その後通常処理へ。</div>
+  </div>
+</section>
+
+<section id="end" class="page">
+  <div class="card">
+    <h2>悖逆の機骸-終</h2>
+    <div class="future">
+      <div class="future-icon">＋</div>
+      <div><strong>今後追加予定</strong><br><span class="small">攻略情報が追加されたら、このページに追記できます。</span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">おふとん｜Guild Raid Template</footer>
+
+<script>
+document.querySelectorAll("figure img").forEach(img=>{
+  img.addEventListener("click",()=>window.open(img.src,"_blank"));
+});
+const buttons = document.querySelectorAll(".nav button");
+const pages = document.querySelectorAll(".page");
+buttons.forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    const id=btn.dataset.page;
+    buttons.forEach(b=>b.classList.toggle("active",b===btn));
+    pages.forEach(p=>p.classList.toggle("active",p.id===id));
+    window.scrollTo({top:0,behavior:"smooth"});
+  });
+});
+</script>
+</body>
+</html>
