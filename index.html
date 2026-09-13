@@ -40,75 +40,152 @@ figure{max-width:600px;margin:20px auto}figure img{width:100%;display:block;bord
 </div></section>
 
 <section class="page" id="continue"><div class="card"><h2>悖逆の機骸-継</h2>
-<figure><img src="assets/continue_map.png"><figcaption>3×3配置図</figcaption></figure>
+<div class="pills"><span class="pill">床破壊攻撃</span><span class="pill">広範囲距離減衰AoE</span><span class="pill">ゴーレム処理</span></div>
+
+<figure><img src="assets/continue_map.png"><figcaption>悖逆の機骸-継｜PIN位置・配置・移動方向</figcaption></figure>
 
 <h3>床破壊攻撃</h3>
+<p>床破壊攻撃は、毎回<strong>前半2名 → 後半2名</strong>の順に対象になります。</p>
+
+<h4>1回目</h4>
 <ul>
-<li><strong>1 → 2 → 3 PINの順番</strong>でまとめて処理</li>
-<li>基本は対象者が指定された床を使って処理</li>
-<li>【非推奨】処理に余裕がある人は、<strong>巨大AOEの対象になった際、処理のタイミングでジャンプして一度床外へ出て戻る</strong>ことで、余分な床を壊さずに処理可能</li>
+<li><strong>前半2名 → ①PIN</strong></li>
+<li><strong>後半2名 → ②PIN</strong></li>
 </ul>
 
-<div class="warn"><strong>ハード以降</strong>
+<h4>2回目</h4>
 <ul>
-<li>2番目の対象者は猶予時間が短い</li>
-<li>間に合わない場合は<strong>1PIN床処理時：サブ床3PIN ／ 2PIN床処理時：サブ床4PINを使用</strong></li>
+<li><strong>前半2名 → ③PIN</strong></li>
+<li><strong>後半2名 → ④PIN</strong></li>
 </ul>
-</div>
 
-<h3>ハード追加ギミック：広範囲AOE</h3>
+<h4>床を節約する方法 ※非推奨</h4>
+<p>処理に余裕がある人は、<strong>巨大AoEの対象になった際、着弾タイミングに合わせてジャンプで一度床外へ出て戻る</strong>ことで、余分な床を壊さずに処理できます。</p>
+<div class="warn">※失敗リスクがあるため、基本は<strong>指定されたPINの床を使用</strong>してください。</div>
+
+<h4>ハード以降</h4>
 <ul>
-<li><strong>2名指定距離減衰攻撃</strong></li>
-<li><strong>2PIN側の床の角と4PIN角</strong>で処理</li>
+<li><strong>後半2名は処理までの猶予時間が短くなるため注意！</strong></li>
 </ul>
+
+<h3>ハード追加ギミック：広範囲距離減衰AoE</h3>
+<p><strong>2名を対象とした広範囲の距離減衰攻撃</strong>です。</p>
+<ul>
+<li><strong>1名 → ⑤PIN</strong></li>
+<li><strong>1名 → ⑥PIN</strong></li>
+</ul>
+<p>それぞれ指定PIN付近で離して処理してください。</p>
 
 <h3>ゴーレム処理</h3>
+<h4>待機位置</h4>
 <ul>
-<li><strong>MT：6 PINで待機</strong></li>
-<li><strong>ST：対角（2PIN側）で待機</strong></li>
-<li><strong>DH：6 PIN集合</strong></li>
+<li><strong>MT → ⑥PIN</strong></li>
+<li><strong>ST → ⑤PIN</strong></li>
+<li><strong>D/H → ⑥PIN集合</strong></li>
 </ul>
-<div class="danger"><strong>6PINゴーレムを先落とし</strong> → その後通常処理へ。</div>
+
+<h4>処理順</h4>
+<div class="note"><strong>⑥PIN側のゴーレムを先に撃破</strong>します。</div>
+
+<h4>床が破壊される場合</h4>
+<ul>
+<li><strong>MT：⑥PIN位置から ← 左へ移動</strong></li>
+<li><strong>ST：⑤PIN位置から ↓ 下へ移動</strong></li>
+</ul>
+<div class="danger">⚠️ <strong>床破壊攻撃時のAoEは即死です。必ず避けてください。</strong></div>
 </div></section>
 
 <section class="page" id="end"><div class="card"><h2>悖逆の機骸-終</h2>
 <div class="pills"><span class="pill">基本散開</span><span class="pill">オーブ吹き飛ばし</span><span class="pill">距離減衰地雷</span><span class="pill">レーザー照射</span><span class="pill">時間停止</span><span class="pill">運動会</span></div>
 
-<h3>基本散開</h3><ul><li><strong>T：左手前（銃前）</strong></li><li><strong>D/H：右手前</strong>（中央手前と右手前タイルの境目付近）</li></ul><div class="note"><strong>吹き飛ばし攻撃後、Tは奥中央へ移動。</strong></div>
+<h3>基本散開</h3>
+<ul><li><strong>T：左手前（銃前）</strong></li><li><strong>D/H：右手前</strong><ul><li>中央手前と右手前タイルの境目付近</li></ul></li></ul>
+<div class="note"><strong>吹き飛ばし攻撃後、Tは奥中央へ移動。</strong></div>
 <figure><img src="assets/end_fig1.png"><figcaption>図1｜基本散開</figcaption></figure>
 
-<h3>オーブ吹き飛ばし</h3><div class="danger"><strong>剛体無効</strong></div><p>奥・手前それぞれに<strong>大きな玉</strong>が出現し、約<strong>1.5マス分</strong>の吹き飛ばしが発生。落下しないよう立ち位置を調整します。</p>
-<h4>吹き飛ばされる方向</h4><p>方向入力をしていない場合、<strong>玉がある位置とは逆サイド</strong>へ吹き飛ばされます。</p>
-<h4>対策</h4><ul><li><strong>玉側へ寄る</strong></li><li>または<strong>玉と逆側の端まで逃げる</strong></li></ul>
+<h3>オーブ吹き飛ばし</h3>
+<div class="danger"><strong>剛体無効</strong></div>
+<p>奥・手前それぞれに<strong>大きな玉が出現</strong>し、約<strong>1.5マス分の吹き飛ばし攻撃</strong>が発生します。落下しないように立ち位置を調整してください。</p>
+<h4>吹き飛ばされる方向</h4>
+<p>方向入力をしていない場合、<strong>玉がある位置とは逆サイドへ吹き飛ばされます。</strong></p>
+<h4>対策</h4>
+<ul><li><strong>玉側へ寄る</strong></li><li>または<strong>玉と逆側の端まで逃げる</strong></li></ul>
+<p>どちらかで落下を防ぎます。</p>
 
-<h3>距離減衰地雷</h3><p>通常は<strong>3人対象</strong>。2回目は<strong>4人指定の可能性あり</strong>。</p><div class="note">対象指定から約<strong>10～11秒後</strong>に地雷設置 → さらに約<strong>3秒後</strong>に起爆。</div>
-<h4>対策</h4><p>対象者同士で多少重なってもいいので、<strong>確実に端まで運んで設置してから中央へ戻る</strong>。中途半端な位置に置かないことを優先。</p>
+<h3>距離減衰地雷</h3>
+<p>要所要所に挟まってくるギミックです。</p>
+<p>通常は<strong>3人が対象</strong>。<br>※2回目は<strong>4人指定の可能性あり</strong></p>
+<div class="note">対象指定から約<strong>10～11秒後に距離減衰地雷を設置</strong> → さらに約<strong>3秒後に起爆</strong>します。</div>
+<h4>対策</h4>
+<p>地雷は設置した瞬間には爆発しません。</p>
+<p><strong>対象者同士で多少重なってもいいので、確実に端まで運んで設置してから中央へ戻る。</strong></p>
+<div class="warn">中途半端な位置に置かず、<strong>しっかり端まで運ぶことを優先</strong>してください。</div>
 
-<h3>レーザー照射</h3><p>頭上に①・②・③が表示され、それぞれ<strong>2人1組</strong>。各組の2人のうち<strong>1人だけが正解のクリスタルに紐づいています</strong>。</p>
-<p>一定時間後、安全地帯1マスを除く各床に<strong>持続致死ダメージ</strong>。安全地帯は数秒おきに切り替わります。</p>
-<figure><img src="assets/end_fig2.png"><figcaption>図2｜順番インタラクト</figcaption></figure>
-<h4>処理方法</h4><div class="warn">安全地帯の順番は<strong>固定らしい？</strong>ため、現時点では図2の位置を基準に処理。</div>
-<ul><li><strong>イージー：①</strong></li><li><strong>ハード：① → ②</strong></li><li><strong>ナイトメア：① → ② → ③</strong></li></ul>
-<p>それぞれ<strong>約2秒ずつ間隔を空けて</strong>クリスタルへアクセス。</p>
-<h4>ハード以降</h4><p>レーザー照射後に<strong>Tバスター</strong>。Tは照射処理後、<strong>角へ移動して処理</strong>。</p>
+<h3>レーザー照射</h3>
+<p>プレイヤーの頭上に数字が表示されます。</p>
+<ul><li><strong>1組目：2名</strong></li><li><strong>2組目：2名</strong></li><li><strong>3組目：2名</strong></li></ul>
+<p>それぞれ<strong>2人1組のグループ</strong>になっていますが、<strong>各グループの2人のうち1人だけが正解のクリスタルに紐づいています。</strong></p>
+<p>難易度が上がるごとに、処理するグループが1つずつ追加されます。</p>
+<p>一定時間後、<strong>安全地帯1マスを除いた各床パネルに持続致死ダメージ</strong>が発生。安全地帯となる床は数秒おきに切り替わります。</p>
+
+<h4>処理順</h4>
+<ul><li><strong>イージー：1組</strong></li><li><strong>ハード：1組 → 2組</strong></li><li><strong>ナイトメア：1組 → 2組 → 3組</strong></li></ul>
+<p>それぞれ<strong>約2秒ずつ間隔を空けてクリスタルへアクセス</strong>してください。</p>
+
+<h4>クリスタル処理・コール</h4>
+<p>対象者が自分で<strong>正解のクリスタルをインタラクトできた場合</strong>は、入力完了後にチャットで<strong>「k」</strong>とコールします。</p>
+<p>対岸などに正解のクリスタルがあり、<strong>対象者本人がインタラクトできない場合</strong>は、以下の流れで処理します。</p>
+<ol>
+<li>※図2参照で、正解のクリスタル番号を<strong>①～⑥</strong>でチャットにコール</li>
+<li>そのクリスタルの近くにいる人が代わりにインタラクト</li>
+<li>入力できた人が<strong>「k」</strong>とコール</li>
+</ol>
+<div class="danger"><strong>「k」が確認できてから、次の組のクリスタル処理へ進んでください。</strong></div>
+<figure><img src="assets/end_fig2.png"><figcaption>図2｜照射時 床コール用</figcaption></figure>
+
+<h4>ハード以降</h4>
+<p>レーザー照射後に<strong>Tバスター</strong>が来ます。</p>
+<p>Tバスター時の立ち位置は、<strong>最後のテレポート先によって左右が変わるため注意。</strong></p>
+<ul><li><strong>ボスがいる側：D/H</strong></li><li><strong>ボスと反対側：T</strong></li></ul>
+<p><strong>TはD/Hから離れるようにボスと反対側の角へ移動し、Tバスターを処理してください。</strong></p>
+<div class="warn">固定で左右を覚えるのではなく、<strong>「ボス側にD/H、その反対側にT」</strong>を基準に判断してください。</div>
 <figure><img src="assets/end_fig3.png"><figcaption>図3｜レーザー照射後のTバスター処理</figcaption></figure>
 
-<h3>時間停止</h3><p>時間停止中に表示された<strong>攻撃予兆を覚え</strong>、解除後に順番通り処理します。</p><div class="warn">事前に少し散開しておかないと予兆が重なって見えづらくなるので注意。</div>
-<ul><li>頭割り</li><li>距離減衰</li><li>単体AoE</li></ul><p>頭上の<strong>ピンク色の小さな時計が1周すると攻撃発生</strong>。</p>
+<h3>時間停止</h3>
+<p>時間が停止し、その間に<strong>攻撃予兆が表示</strong>されます。表示された予兆を覚え、時間停止解除後に順番通り処理します。</p>
+<div class="warn">ギミック前にあらかじめ少し散開しておかないと、予兆が重なって見えづらくなるので注意。</div>
+<p>出現する攻撃は以下の3種類です。</p>
+<ul><li>頭割り</li><li>距離減衰</li><li>単体AoE</li></ul>
+<p>頭上に表示される<strong>ピンク色の小さな時計が1周すると攻撃発生</strong>。</p>
+<h4>処理位置</h4>
+<ul><li><strong>頭割り：</strong>中央・ボス前で集合</li><li><strong>距離減衰：</strong>4つ角へ散開<br>※Hはここでダメ減を使用</li><li><strong>単体AoE：</strong>中央付近で散開</li></ul>
 <figure><img src="assets/end_fig4.png"><figcaption>図4｜時間停止ギミック対応</figcaption></figure>
-<h4>処理位置</h4><ul><li><strong>頭割り：</strong>中央・ボス前で集合</li><li><strong>距離減衰：</strong>4つ角へ散開（Hはここでダメ減）</li><li><strong>単体AoE：</strong>中央付近で散開</li></ul>
+<h4>攻撃順</h4>
 <div class="order">頭割り → 距離減衰 → 単体AoE</div>
-<p>基本は<strong>頭割り処理 → 終わり次第4方向へ散開 → 単体AoE処理</strong>。</p>
-<div class="danger"><strong>13人以上：</strong>距離減衰対象者は頭割りに参加せず、最初から担当する角へ移動。</div>
+<p>基本は、<strong>頭割り処理 → 終わり次第4方向へ散開 → 単体AoE処理</strong>という流れです。</p>
+<div class="danger"><strong>13人以上のレイドの場合：</strong>距離減衰対象者は頭割りに参加せず、<strong>最初から担当する角へ移動</strong>してください。</div>
 
-<h3>運動会ギミック</h3><p>床が<strong>6マス → 9マス</strong>に変化。ボスが右側へ移動し、<strong>右から左へ雷攻撃</strong>を行います。雷は<strong>ジャスト回避可能</strong>。</p>
+<h3>運動会ギミック</h3>
+<p>床が<strong>6マス → 9マス</strong>に変化します。</p>
+<p>ボスが右側へ移動し、<strong>右から左へ雷攻撃</strong>を行います。<br>※雷攻撃は<strong>ジャスト回避可能</strong></p>
+<h4>基本配置</h4>
+<ul><li><strong>T：左上</strong></li><li><strong>D/H：左下</strong></li></ul>
+<p>基本はこの位置で雷攻撃を回避します。</p>
+<p>HはTを回復するために<strong>中央列へ移動してもOK</strong>です。</p>
+<div class="warn">ただし、雷攻撃時には<strong>中央列へ巨大レーザー</strong>も来るため、中央列にいる場合は必ずレーザーを回避してください。</div>
+<h4>ナイトメア</h4>
+<p>ナイトメアからは<strong>ゴーレムの幻影</strong>が追加されます。ゴーレムは<strong>距離減衰攻撃</strong>を行うため、出現した位置からしっかり距離を取ります。</p>
+<p><strong>叩きつけ攻撃が終わったら運動会ギミック終了。</strong></p>
+<div class="danger">ナイトメアでは、このギミック終了後から<strong>HPバー横のギミック予告が表示されなくなります。</strong>以降は予告に頼らず、攻撃を見て対応してください。</div>
 <figure><img src="assets/end_fig5.png"><figcaption>図5｜運動会ギミック</figcaption></figure>
-<h4>基本配置</h4><ul><li><strong>T：左上</strong></li><li><strong>D/H：左下</strong></li></ul><p>HはTを回復するため<strong>中央列へ移動してもOK</strong>。ただし中央列には<strong>巨大レーザー</strong>も来るため必ず回避。</p>
-<h4>ナイトメア</h4><p><strong>ゴーレムの幻影</strong>が追加。距離減衰攻撃を行うため、出現位置からしっかり距離を取ります。</p><p><strong>叩きつけ攻撃が終わったら運動会終了。</strong></p>
-<div class="danger">ナイトメアでは、このギミック終了後から<strong>HPバー横のギミック予告が表示されなくなります</strong>。以降は攻撃を見て対応。</div>
 
-<h3>その他ギミック</h3><h4>青キューブ</h4><p>青いキューブで<strong>床1面を指定</strong>。指定された床から離れて回避。</p>
-<h4>ランダム攻撃</h4><p><strong>頭割り / 距離減衰 / 単体AoE</strong>のいずれか1種類がランダムで発生。メインギミック終了後も次の予兆を確認して対応してください。</p>
+<h3>その他ギミック</h3>
+<h4>青キューブ</h4>
+<p>青いキューブで<strong>床1面を指定してくる攻撃</strong>。指定された床から離れて回避します。</p>
+<h4>ランダム攻撃</h4>
+<p>以下のうち<strong>いずれか1種類</strong>がランダムで発生します。</p>
+<ul><li>頭割り</li><li>距離減衰</li><li>単体AoE</li></ul>
+<p>これらがメインギミックの合間にも挟まってくるため、<strong>各ギミック終了後も次の予兆を確認して対応してください。</strong></p>
 </div></section>
 </main>
 <script>
